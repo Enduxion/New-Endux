@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/font/Roboto.woff2');
+}
+
+html {
+    @apply overflow-x-hidden cursor-none;
+}
+
+* {
+    @apply text-white font-inter antialiased m-0 p-0;
+}
+
+body {
+    @apply bg-black;
+}
+
+.custom-primary-text {
+    @apply uppercase tracking-widest drop-shadow-[0_0_25px_#fff];
+}
+
+.custom-secondary-text {
+    @apply uppercase tracking-widest drop-shadow-[0_0_25px_#00ffee] text-primary;
+}
+::-webkit-scrollbar {
+    @apply w-2;
+}
+::-webkit-scrollbar-track {
+    @apply bg-black;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-[rgba(0,255,238,0.7)] rounded-lg hover:bg-[rgba(0,255,238,1)];
+}

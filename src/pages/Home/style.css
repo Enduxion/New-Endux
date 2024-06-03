@@ -1,0 +1,6 @@
+.social-icons {
+    @apply text-xl border-2 border-primary h-fit flex p-[10px] aspect-square rounded-full items-center justify-center hover:shadow-[0_0_25px_#00ffee] hover:bg-primary transition duration-200;
+}
+.social-icons:hover > i {
+    @apply text-black transition duration-200 scale-75;
+}
