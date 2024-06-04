@@ -5,6 +5,8 @@ import "./style.css";
 import Lander from "./Lander/Lander";
 import Timeline from "./Timeline/Timeline";
 
+import { motion } from "framer-motion";
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -18,9 +20,6 @@ export default class Home extends Component {
     return (
       <>
         <Lander />
-        <div className="flex w-full h-[2px] items-center justify-center my-2">
-          <div className="flex w-4/5 h-full bg-primary "></div>
-        </div>
         <Timeline />
       </>
     );

@@ -17,7 +17,7 @@ export default class Lander extends Component {
         initial={{ translateY: "100%" }}
         whileInView={{ translateY: 0 }}
         transition={{ duration: 1 }}
-        className="w-full h-[calc(100vh-64px)] mt-16 flex bg-black flex-row items-center"
+        className="w-full h-[calc(100vh-64px)] mt-16 flex bg-black flex-row items-center border-b-2 border-primary mb-4"
       >
         <div className="px-4 flex flex-col gap-10">
           {/* Social Media link */}
