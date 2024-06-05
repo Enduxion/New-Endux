@@ -12,7 +12,7 @@ export default class Timeline extends Component {
 
   render() {
     return (
-      <div className="w-full h-[calc(100vh/1.5)] flex flex-col items-center">
+      <div className="w-full h-[calc(100vh/1.5)] flex flex-col items-center mt-4">
         <motion.span className="flex w-full justify-center custom-secondary-text text-3xl font-extrabold"
           initial={{
             opacity: 0,

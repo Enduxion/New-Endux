@@ -12,7 +12,7 @@ export default class Button extends Component {
   }
   render() {
     return (
-      <Link to={this.props.href} className={this.classNames}>
+      <Link to={this.props.href} className={this.classNames} onClick={this.props.onClick ? this.props.onClick : null}>
         {this.props.children}
       </Link>
     );
