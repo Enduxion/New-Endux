@@ -2,10 +2,12 @@ import { Component } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default class Timecard extends Component {
+    // This component is used in the Timeline component, it provides a card that can be dragged horizontally
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
 
+        // if align is even, the card will be on the top, if odd, the card will be on the bottom
         this.state = {
             isClicked: true,
             direction: this.props.align % 2 === 0 ? "top" : "bottom",
@@ -13,12 +15,14 @@ export default class Timecard extends Component {
 
     }
 
+    // to set click to true if false or false if true
     handleClick = () => {
         this.setState({ isClicked: !this.state.isClicked });
     }
 
     render() {
         return (
+            // the main card, this is the rounded box that contains the text and the icon
             <motion.div
                 className="absolute rounded-full bg-black border-2 border-primary shadow-[0_0_25px_#00ffee] w-12 h-12 flex items-center justify-center mouse-interact"
                 style={{
@@ -49,6 +53,8 @@ export default class Timecard extends Component {
                 }}
                 onMouseUp={this.handleClick}
             >
+                {/* This is the box that is on the top or the bottom when the card is clicked */}
+                {/* AnimatePresence is used to animate the box when the card exits */}
                 <AnimatePresence>
                     {
                         this.state.isClicked &&
