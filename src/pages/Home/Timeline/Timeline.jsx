@@ -1,39 +1,13 @@
 import { Component } from "react";
-
 import { motion } from "framer-motion";
 
 import Timecard from "./Timecard/Timecard";
 
+import HistoryData from "../../../assets/data/History";
+
 export default class Timeline extends Component {
   constructor() {
     super();
-    this.timecard_info = [
-      {
-        year: 2006,
-        title: "Date Of Birth",
-        details: "Read more..."
-      },
-      {
-        year: 2007,
-        title: "I am testing",
-        details: "This is some rough few data so that I can test this program"
-      },
-      {
-        year: 2008,
-        title: "I am typing in javascript and this text my overflow but who cares right?",
-        details: "Whatever happens happens because it follows rule of gravity... aparantly"
-      },
-      {
-        year: 2009,
-        title: "I was born",
-        details: "This was the day I was born into the word and blah blah blah"
-      },
-      {
-        year: 2010,
-        title: "I was born",
-        details: "This was the day I was born into the word and blah blah blah"
-      },
-    ]
   }
 
   render() {
@@ -62,8 +36,8 @@ export default class Timeline extends Component {
               transition={{ duration: 1, delay: 1 }}
             >
               {
-                [...this.timecard_info].map((item, index) =>
-                  <Timecard key={index} year={item.year} title={item.title} details={item.details} align={index} totalData={this.timecard_info.length - 1} />
+                HistoryData.map((item, index) =>
+                  <Timecard key={index} year={item.year} title={item.title} details={item.details} align={index} totalData={HistoryData.length - 1} />
                 )
               }
             </motion.div>
