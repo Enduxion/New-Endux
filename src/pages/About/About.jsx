@@ -1,4 +1,5 @@
 import { Component } from "react";
+import WIP from "../WIP/WIP";
 
 export default class About extends Component {
     
@@ -8,7 +9,7 @@ export default class About extends Component {
     }
     render() {
         return (
-            <>About</>
+            <WIP pageName="About" />
         );
     }
 }

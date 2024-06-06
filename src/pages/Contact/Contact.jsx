@@ -1,4 +1,5 @@
 import { Component } from "react";
+import WIP from "../WIP/WIP";
 
 export default class Contact extends Component {
     
@@ -8,7 +9,7 @@ export default class Contact extends Component {
     }
     render() {
         return (
-            <>Contact</>
+            <WIP pageName={"Contact"} />
         );
     }
 }
