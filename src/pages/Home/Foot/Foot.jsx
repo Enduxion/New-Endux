@@ -15,7 +15,7 @@ export default class Foot extends Component {
                     Want to know more?
                 </span>
                 <motion.div
-                    className="w-full flex flex-row gap-20 justify-center mt-10 mb-4 h-16"
+                    className="w-full flex flex-row gap-20 justify-center mt-10 mb-4 h-12"
                     initial={{
                         opacity: 0
                     }}

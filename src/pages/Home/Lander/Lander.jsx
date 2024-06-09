@@ -57,10 +57,10 @@ export default class Lander extends Component {
           </span>
           {/* Button Part */}
           <div className="flex gap-5 mt-4 ml-1">
-            <Button href="/cv.pdf" decor={0}>
+            <Button href="/cv.pdf" decor={0} className="w-fit">
               Curriculum Vitae
             </Button>
-            <Button href="/contact" decor={1}>
+            <Button href="/contact" decor={1} className="w-fit">
               Contact Me
             </Button>
           </div>
