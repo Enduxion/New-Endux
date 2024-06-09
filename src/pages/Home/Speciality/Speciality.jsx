@@ -31,7 +31,7 @@ export default class Speciality extends Component {
         return (
             <>
                 <div className="flex flex-col items-center p-4 border-b-2 border-primary pb-8">
-                    <motion.span className="flex w-full mt-4 mb-8 justify-center custom-secondary-text text-3xl font-extrabold"
+                    <motion.span className="flex w-full mt-4 mb-8 justify-center custom-secondary-text font-roboto text-3xl font-extrabold"
                         initial={{
                             opacity: 0,
                             scale: 0
